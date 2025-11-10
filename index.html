@@ -133,6 +133,10 @@
     </div>
 
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+           updateButton()
+        });
+        
         function updateButton() {
             const selector = document.getElementById('dateSelector');
             const button = document.getElementById('viewButton');
