@@ -1,6 +1,6 @@
 {
   "trade_date": "2025-11-13",
-  "generated_time": "2025-11-13T03:54:31.816821",
+  "generated_time": "2025-11-13T11:31:36.763306",
   "selector_alias": "补票战法",
   "total_stocks": 1,
   "selected_stocks": [
@@ -11,10 +11,10 @@
       "name": "金自天正",
       "industry": "C35专用设备制造业",
       "market": "上海",
-      "close_price": 17.79,
-      "market_cap": 26685000000.0,
-      "pe_ttm": 77.087518,
-      "pb_mrq": 4.122666,
+      "close_price": 17.9,
+      "market_cap": 26849999999.999996,
+      "pe_ttm": 77.564169,
+      "pb_mrq": 4.148157,
       "latest_close": 18.08,
       "latest_volume": 22440.0,
       "latest_date": "2025-11-13"
