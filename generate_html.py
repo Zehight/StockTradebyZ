@@ -1034,9 +1034,6 @@ def generate_index_page(html_dir: Path = None):
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-           updateButton()
-        });
         function updateButton() {{
             const selector = document.getElementById('dateSelector');
             const button = document.getElementById('viewButton');
@@ -1049,6 +1046,9 @@ def generate_index_page(html_dir: Path = None):
                 window.location.href = `reports/report-${{selector.value}}.html`;
             }}
         }}
+        document.addEventListener('DOMContentLoaded', () => {
+           updateButton()
+        });
     </script>
 </body>
 </html>'''
