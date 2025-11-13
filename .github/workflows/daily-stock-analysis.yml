@@ -130,20 +130,22 @@ jobs:
       run: |
         echo "清理超过5天的缓存和报告文件..."
         
-        # 清理 cache 目录中超过5天的文件
+        # 清理 cache 目录中超过5天的文件（跳过 *_latest 文件）
         if [ -d "cache" ]; then
           echo "清理 cache 目录..."
-          find cache -name "*.json" -type f -mtime +5 -delete
-          find cache -name "*.csv" -type f -mtime +5 -delete
+          python cleanup_cache_files.py --path cache --days 5 --extensions .json .csv --skip-token _latest
           echo "cache 目录清理完成"
+        else
+          echo "未找到 cache 目录，跳过"
         fi
         
         # 清理 reports 目录中超过5天的文件
         if [ -d "reports" ]; then
           echo "清理 reports 目录..."
-          find reports -name "*.html" -type f -mtime +5 -delete
-          find reports -name "*.json" -type f -mtime +5 -delete
+          python cleanup_cache_files.py --path reports --days 5 --extensions .html .json
           echo "reports 目录清理完成"
+        else
+          echo "未找到 reports 目录，跳过"
         fi
         
         # 显示清理后的文件列表
