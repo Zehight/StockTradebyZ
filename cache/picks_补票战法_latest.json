@@ -1,23 +1,8 @@
 {
-  "trade_date": "2025-12-26",
-  "generated_time": "2025-12-26T11:32:06.128167",
+  "trade_date": "2025-12-29",
+  "generated_time": "2025-12-29T11:30:55.247274",
   "selector_alias": "补票战法",
-  "total_stocks": 1,
-  "selected_stocks": [
-    "601778"
-  ],
-  "stock_details": {
-    "601778": {
-      "name": "晶科科技",
-      "industry": "D44电力、热力生产和供应业",
-      "market": "上海",
-      "close_price": 3.83,
-      "market_cap": 5745000000.0,
-      "pe_ttm": 29.715911,
-      "pb_mrq": 0.864397,
-      "latest_close": 3.83,
-      "latest_volume": 1599611.0,
-      "latest_date": "2025-12-26"
-    }
-  }
+  "total_stocks": 0,
+  "selected_stocks": [],
+  "stock_details": {}
 }
